@@ -1,1 +1,36 @@
-123
+@font-face {
+  src: url(./fonts/fonts.css/ebgaramondmedium.woff2');
+  font-family: 'EB Garamond';
+  font-weight: 500; 
+}
+
+@font-face {
+  src: url(./fonts/fonts.css/ebgaramondregular.woff');
+  font-family: 'EB Garamond';
+  font-weight: 400; 
+}
+
+@font-face {
+  src: url('./fonts/fonts.css/interregular'); 
+  font-family: 'Inter';    
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('./fonts/fonts.css/interbold') format('woff');
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+
+body {
+  font-family: 'Inter Regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond Medium', serif;
+}
+
+.bold-text {
+  font-family: 'Inter Bold', sans-serif;
+}
