@@ -60,16 +60,16 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 .cover {
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
+  background-size: 94% auto;
   background-position: right;
-  width: 360px;
   min-height: 198px;
   padding: 7px 24px 30px 21px;
 }
 
 .cover_title {
+  color: #fff;
   display: block;
   font-family: 'EB Garamond', serif;
-  color: #FFF;
   font-size: 72px;
   font-weight: 400;
   line-height: 100%;
@@ -166,18 +166,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 }
 
 .card {
-  padding: 20px;
-  margin-bottom: 32px;
-  border-radius: 30px;
-}
-
-.cards-list__item {
   display: flex;
   flex-direction: column;
   gap: 8px;
   color: #f5f5f5;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 32px; 
 }
 
+.cards-list__last:last-child .card {
+  margin-bottom: 19px;
+}
 
 .card_theme_dark {
   background-color: #343434;
@@ -194,16 +194,17 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   gap: 8px;
 }
 
+.card__author-name {
+  color: #f5f5f5;
+  font-weight:bold;
+  font-size: 16px;
+  line-height: 135%;
+}
+
 .card__author-photo {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-}
-
-.card__author-name {
-  color: #f5f5f5;
-  font-size: 16px;
-  line-height: 135%;
 }
 
 .card__content {
@@ -224,10 +225,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   font-size: 16px;
   font-weight: 400;
   line-height: 135%;
+  font-family: Inter;
 }
 
 .footer {
   display: flex;
+  min-height: 62px;
   justify-content: space-between;
   padding: 20px;
   border-top: 1px solid #fee42a;
