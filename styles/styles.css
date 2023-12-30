@@ -27,29 +27,30 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 }
 
 .header {
-  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: start; 
+  align-items: start; /* to avoid logo clickable area stretching */
+  padding: 24px 20px;
 }
 
 .header__logo-image {
-  width: 78.45px;
-  height: 15.43px;
+  width: 78.453px;
+  height: 15.432px;
+  flex-grow: 0;
 }
 
 .header__menu-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  list-style: none;
 }
 
 .header__menu-link {
-  color: #F5F5F5;
-  font-size: 16px;
-  line-height: 19.2px;
+  color: #f5f5f5;
   text-decoration: underline;
+  font-size: 16px;
+  line-height: 120%;
 }
 
 .header__menu-item_active .header__menu-link {
@@ -239,12 +240,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   gap: 16px;
 }
 
-.footer__links_l {
+.footer__links-link {
   text-decoration: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 14px;
   line-height: 125%;
 }
 
-
-
+.footer__links-link:hover {
+  text-decoration: underline;
+}
