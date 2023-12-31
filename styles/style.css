@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-family: Inter, sans-serif;
   font-weight: 400;
 }
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: start; 
+  align-items: start;
   padding: 24px 20px;
 }
 
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   color: #f5f5f5;
   border-radius: 30px;
   padding: 20px;
-  margin-bottom: 32px; 
+  margin-bottom: 32px;
 }
 
 .cards-list__last:last-child .card {
