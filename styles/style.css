@@ -165,6 +165,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   list-style: none;
 }
 
+.cards-list li:last-child {
+  margin-bottom: 0;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -173,10 +177,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   border-radius: 30px;
   padding: 20px;
   margin-bottom: 32px;
-}
-
-.card:last-child {
-  margin-bottom: 0px;
 }
 
 .cards-list__last:last-child .card {
@@ -250,7 +250,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 14px;
+  font-size: font-style: normal;
+  font-weight: 400;
   line-height: 125%;
+  font-family: Inter, sans-serif;
 }
 
 
